@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Option String
+LONG=translate:
+SHORT=o:S:
+
+OPTS=$(getopt --options $SHORT --long $LONG --name "$1" -- "$@")
+
+eval set -- "$OPTS"
+
+while true ; do
+  case "$1" in
+    --translate )
+      TRANSLATE=true
+      INFILE="$2"
+      shift 2
+      ;;
+    -o )
+      OUTFILE="$2"
+      shift 2
+      ;;
+    -S )
+      INFILE="$2"
+      shift 2
+      ;;
+    -- )
+      shift
+      break
+      ;;
+    *)
+      echo "Internal error!"
+      exit 1
+      ;;
+  esac
+done
+if [ "$TRANSLATE" == "true" ] ; then
+  cat "$INFILE" | bin/print_python > "$OUTFILE"
+else
+  cat "$INFILE" | bin/print_MIPS > "$OUTFILE"
+fi
