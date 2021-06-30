@@ -17,4 +17,4 @@ To remove all compiled files use command:
 There is also a pdf containing our time management logs that were contiually updated during the course of the project 
 
 # Acknowlegdements
-Dr John Wickerson for support throughout the duration of the project 
+Tejas Dandawate for contribution to project and Dr John Wickerson for support throughout the duration of the project 
