@@ -1,5 +1,5 @@
 # Compiler
-This is a C++ implementation of an ANSI-C to MIPS compiler as part of a project for the Electronic and Information Engineering Year 2 course at Imperial College London. The submission also includes a basic ANSI-C to Python translator. Both deliverables were completed in accordance with the following specification: https://github.com/LangProc/langproc-2019-cw
+This is a C++ implementation of an ANSI-C to MIPS compiler as part of a project for the Electronic and Information Engineering Year 2 course at Imperial College London completed with Tejas Dandawate. The submission also includes a basic ANSI-C to Python translator. Both deliverables were completed in accordance with the following specification: https://github.com/LangProc/langproc-2019-cw
 
 To construct the executable:
 `make bin/c_compiler`
@@ -17,4 +17,4 @@ To remove all compiled files use command:
 There is also a pdf containing our time management logs that were contiually updated during the course of the project 
 
 # Acknowlegdements
-Tejas Dandawate for contribution to project and Dr John Wickerson for support throughout the duration of the project 
+Dr John Wickerson for support throughout the duration of the project 
